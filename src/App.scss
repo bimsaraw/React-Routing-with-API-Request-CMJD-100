@@ -1,0 +1,11 @@
+$primary: #824baa;
+$btn-border-radius: 25px;
+$btn-padding-y: 5px;
+$btn-padding-x: 25px;
+
+
+.user-area {
+    color: $primary;
+}
+
+@import '~bootstrap/scss/bootstrap';
