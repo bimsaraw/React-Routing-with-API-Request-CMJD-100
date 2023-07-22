@@ -7,5 +7,7 @@
 			"path": "../../../../database/database"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "interactive"
+	}
 }

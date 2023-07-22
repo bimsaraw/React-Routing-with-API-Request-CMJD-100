@@ -14,12 +14,14 @@ const User = () => {
     const [password, setPassword] = useState(null);
     const [email, setEmail] = useState(null);
 
-    const userRequest = async () => {
-        const res = await getUsers(); //getUsers async function at userService.js
-        await setUsers(res);
-    }
+    
 
     useEffect(() => {
+
+        const userRequest = async () => {
+            const res = await getUsers(); //getUsers async function at userService.js
+            setUsers(res);
+        }
 
         userRequest();
 
@@ -47,8 +49,6 @@ const User = () => {
             setUsername("");
             setPassword("");
             setEmail("");
-
-            userRequest();
         }
     }
 
